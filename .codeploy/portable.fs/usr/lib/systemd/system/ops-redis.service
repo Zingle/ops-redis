@@ -1,0 +1,6 @@
+[Unit]
+Wants=redis@ops\x2dredis.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash -c "echo provision ops-redis Redis server"
